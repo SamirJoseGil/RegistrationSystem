@@ -1,0 +1,35 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Haskell build artifacts
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+.stack-work/
+dist/
+dist-newstyle/
+
+# Prolog temporary files
+*.qlf
+
+# Coverage
+coverage/

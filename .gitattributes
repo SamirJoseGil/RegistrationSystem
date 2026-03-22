@@ -1,0 +1,27 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Keep shell scripts with LF
+*.sh text eol=lf
+
+# Keep PowerShell scripts with CRLF on Windows
+*.ps1 text eol=crlf
+
+# Source files should stay text
+*.hs text
+*.pl text
+*.ts text
+*.tsx text
+*.js text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
