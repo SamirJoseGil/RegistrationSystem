@@ -11,7 +11,7 @@ El programa permite gestionar la entrada y salida de estudiantes de la universid
 
 ## Estructura del Proyecto
 
-```
+```text
 RegistrationSystem/
   haskell/
     Main.hs
@@ -38,18 +38,21 @@ El programa ofrece las siguientes opciones:
 Requiere GHC (Glasgow Haskell Compiler) instalado.
 
 Compilacion:
-```
+
+```bash
 cd haskell
 ghc -o Main Main.hs
 ```
 
 Ejecucion:
-```
+
+```bash
 ./Main
 ```
 
 O en Windows:
-```
+
+```powershell
 Main.exe
 ```
 
@@ -58,29 +61,34 @@ Main.exe
 Requiere SWI-Prolog instalado.
 
 Ejecucion:
-```
+
+```prolog
 cd prolog
 swipl main.pl
+main.
 ```
 
 ## Formato del Archivo de Datos
 
 El archivo University.txt contiene los registros de estudiantes con el siguiente formato:
 
-```
-ID,TiempoEntrada,TiempoSalida
-456,500,600
-789,420,null
+```text
+ID,Nombre,TiempoEntrada,TiempoSalida
+456,Ana,500,600
+789,Carlos,420,null
 ```
 
 Donde:
+
 - ID: Identificador del estudiante
+- Nombre: Nombre del estudiante
 - TiempoEntrada: Hora de entrada en formato minutos (0-1439)
 - TiempoSalida: Hora de salida o "null" si aun esta dentro
 
 ## Entrada de Tiempo
 
 El programa maneja la hora en formato HH:MM, ejemplo:
+
 - 08:30 = 510 minutos
 - 14:45 = 885 minutos
 
